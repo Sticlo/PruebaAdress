@@ -38,7 +38,7 @@ async function saveData(data) {
         const jsonData = JSON.stringify(data, null, 2);
         await fs.writeFile(dataFile, jsonData, 'utf8');
         return true; // Indicar que los datos se guardaron correctamente
-    } catch (err) {     
+    } catch (err) {
         console.error('Error saving data:', err);
         return false; // Indicar que hubo un error al guardar los datos
     }
@@ -81,6 +81,7 @@ app.post('/api/adquisiciones', async (req, res) => {
         const adquisiciones = await loadData();
         const newAdquisicion = req.body;
         newAdquisicion.id = generateId(); // Generar un ID único
+        newAdquisicion.historial = []; // Inicializar el historial de cambios
         console.log('New adquisicion:', newAdquisicion); // Registrar el nuevo registro
         adquisiciones.push(newAdquisicion);
         const success = await saveData(adquisiciones); // Guardar los datos y verificar si fue exitoso
@@ -95,7 +96,6 @@ app.post('/api/adquisiciones', async (req, res) => {
 });
 
 // Update an adquisicion
-// Update an adquisicion
 app.put('/api/adquisiciones/:id', async (req, res) => {
     try {
         const adquisiciones = await loadData();
@@ -103,13 +103,12 @@ app.put('/api/adquisiciones/:id', async (req, res) => {
         const updatedAdquisicion = req.body;
         const index = adquisiciones.findIndex(a => a.id === id);
         if (index !== -1) {
-            // Obtener la adquisición existente
             const existingAdquisicion = adquisiciones[index];
-            
+
             // Crear un objeto para almacenar el historial de cambios
             const cambio = {
                 fecha: new Date().toISOString(),
-                cambios: updatedAdquisicion // Guardar la información modificada
+                cambios: { ...updatedAdquisicion } // Guardar la información modificada
             };
 
             // Agregar el cambio al historial de la adquisición existente
@@ -118,9 +117,20 @@ app.put('/api/adquisiciones/:id', async (req, res) => {
             }
             existingAdquisicion.historial.push(cambio);
 
-            // Guardar los cambios en el historial
-            await saveData(adquisiciones);
-            res.json(existingAdquisicion);
+            // Actualizar los datos principales de la adquisición con los cambios
+            for (const key in updatedAdquisicion) {
+                if (updatedAdquisicion.hasOwnProperty(key) && key !== 'historial') {
+                    existingAdquisicion[key] = updatedAdquisicion[key];
+                }
+            }
+
+            // Guardar los cambios en el historial y en los datos de la adquisición
+            const success = await saveData(adquisiciones);
+            if (success) {
+                res.json(existingAdquisicion);
+            } else {
+                res.status(500).json({ error: 'Failed to save data' });
+            }
         } else {
             res.status(404).json({ error: 'Adquisicion not found' });
         }
@@ -137,8 +147,12 @@ app.delete('/api/adquisiciones/:id', async (req, res) => {
         const index = adquisiciones.findIndex(a => a.id === id);
         if (index !== -1) {
             adquisiciones.splice(index, 1);
-            await saveData(adquisiciones);
-            res.status(204).send();
+            const success = await saveData(adquisiciones);
+            if (success) {
+                res.status(204).send();
+            } else {
+                res.status(500).json({ error: 'Failed to delete data' });
+            }
         } else {
             res.status(404).json({ error: 'Adquisicion not found' });
         }

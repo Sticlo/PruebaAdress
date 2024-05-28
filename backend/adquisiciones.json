@@ -1,67 +1,53 @@
 [
   {
-    "presupuesto": "900000",
-    "unidad": " Dirección de Medicamentos y Tecnologías en Salud",
-    "tipo": "metal",
-    "cantidad": "555555",
-    "valor-unitario": "598",
-    "fecha": "2024-05-31",
-    "proveedor": "Laboratorios Bayer S.A.E",
-    "documentacion": "adquisicion el 2020-06-09 hasta nuevo .......",
-    "id": 164924,
+    "presupuesto": "10000000000",
+    "unidad": "Dirección de Medicamentos y Tecnologías en Salud",
+    "tipo": "Medicamentos",
+    "cantidad": "10000",
+    "valor-unitario": "1000",
+    "fecha": "2023-07-20",
+    "proveedor": " Laboratorios Bayer S.A.",
+    "documentacion": "Orden de compra No. 2023-07-20-001, factura No. 2023-07-20-001",
+    "id": 936775,
     "historial": [
       {
-        "fecha": "2024-05-28T00:07:38.294Z",
+        "fecha": "2024-05-28T01:49:55.585Z",
         "cambios": {
-          "presupuesto": "900000",
-          "unidad": " Dirección de Medicamentos y Tecnologías en Salud",
-          "tipo": "metalesssss",
-          "cantidad": "555555",
-          "valor-unitario": "598",
-          "fecha": "2024-05-31",
-          "proveedor": "Laboratorios Bayer S.A.E",
-          "documentacion": "adquisicion el 2020-06-09 hasta nuevo ......."
+          "presupuesto": "10000000000",
+          "unidad": "Tecnologia en salud",
+          "tipo": "Medicamentos",
+          "cantidad": "10000",
+          "valor-unitario": "1000",
+          "fecha": "2023-07-20",
+          "proveedor": " Laboratorios Bayer S.A.",
+          "documentacion": "Orden de compra No. 2023-07-20-001, factura No. 2023-07-20-001"
         }
       },
       {
-        "fecha": "2024-05-28T00:24:54.801Z",
+        "fecha": "2024-05-28T01:50:50.292Z",
         "cambios": {
-          "presupuesto": "900000",
-          "unidad": "hsdf4r",
-          "tipo": "metal",
-          "cantidad": "555555",
-          "valor-unitario": "598",
-          "fecha": "2024-05-31",
-          "proveedor": "Laboratorios Bayer S.A.E",
-          "documentacion": "adquisicion el 2020-06-09 hasta nuevo ......."
+          "presupuesto": "10000000000",
+          "unidad": "Dirección de Medicamentos y Tecnologías en Salud",
+          "tipo": "Medicamentos",
+          "cantidad": "10000",
+          "valor-unitario": "1000",
+          "fecha": "2023-07-20",
+          "proveedor": " Laboratorios Bayer S.A.",
+          "documentacion": "Orden de compra No. 2023-07-20-001, factura No. 2023-07-20-001"
         }
       }
     ]
   },
   {
-    "presupuesto": "900000",
-    "unidad": "dfaf",
-    "tipo": "metal",
-    "cantidad": "23424",
-    "valor-unitario": "464",
-    "fecha": "2024-04-18",
-    "proveedor": "pfizer",
-    "documentacion": "se la compr......",
-    "id": 753014,
-    "historial": [
-      {
-        "fecha": "2024-05-28T00:25:19.625Z",
-        "cambios": {
-          "presupuesto": "900000",
-          "unidad": "dfaf",
-          "tipo": "metalesssss",
-          "cantidad": "23424",
-          "valor-unitario": "464",
-          "fecha": "2024-04-18",
-          "proveedor": "pfizer",
-          "documentacion": "se la compr......"
-        }
-      }
-    ]
+    "presupuesto": "24242421",
+    "unidad": "Dirección de Medicamentos y Tecnologías en Salud",
+    "tipo": "Equipo Especializado medico",
+    "cantidad": "56",
+    "valor-unitario": "1234632",
+    "fecha": "2024-05-24",
+    "proveedor": "navavax",
+    "documentacion": "Orden de compra No. 2024-05-24-001, factura No. 2024-05-24-001",
+    "id": 808758,
+    "historial": []
   }
 ]
