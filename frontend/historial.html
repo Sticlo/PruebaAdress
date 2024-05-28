@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Historial de Adquisiciones</title>
+    <link rel="stylesheet" href="css/historialstyles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Historial de Adquisiciones</h1>
+    </header>
+    <main>
+      <div id="historial-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Presupuesto</th>
+              <th>Unidad</th>
+              <th>Tipo de Bien o Servicio</th>
+              <th>Cantidad</th>
+              <th>Valor Unitario</th>
+              <th>Valor Total</th>
+              <th>Fecha de Adquisición</th>
+              <th>Proveedor</th>
+              <th>Documentación</th>
+            </tr>
+          </thead>
+          <tbody id="historialBody">
+            <!-- Aquí se insertarán las filas de datos dinámicamente -->
+          </tbody>
+        </table>
+      </div>
+      <button id="btn-volver" onclick="volverIndex()">Volver al Inicio</button>
+    </main>
+    <footer></footer>
+    <script src="js/historial.js"></script>
+  </body>
+</html>

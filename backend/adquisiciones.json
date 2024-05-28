@@ -1,0 +1,67 @@
+[
+  {
+    "presupuesto": "900000",
+    "unidad": " Dirección de Medicamentos y Tecnologías en Salud",
+    "tipo": "metal",
+    "cantidad": "555555",
+    "valor-unitario": "598",
+    "fecha": "2024-05-31",
+    "proveedor": "Laboratorios Bayer S.A.E",
+    "documentacion": "adquisicion el 2020-06-09 hasta nuevo .......",
+    "id": 164924,
+    "historial": [
+      {
+        "fecha": "2024-05-28T00:07:38.294Z",
+        "cambios": {
+          "presupuesto": "900000",
+          "unidad": " Dirección de Medicamentos y Tecnologías en Salud",
+          "tipo": "metalesssss",
+          "cantidad": "555555",
+          "valor-unitario": "598",
+          "fecha": "2024-05-31",
+          "proveedor": "Laboratorios Bayer S.A.E",
+          "documentacion": "adquisicion el 2020-06-09 hasta nuevo ......."
+        }
+      },
+      {
+        "fecha": "2024-05-28T00:24:54.801Z",
+        "cambios": {
+          "presupuesto": "900000",
+          "unidad": "hsdf4r",
+          "tipo": "metal",
+          "cantidad": "555555",
+          "valor-unitario": "598",
+          "fecha": "2024-05-31",
+          "proveedor": "Laboratorios Bayer S.A.E",
+          "documentacion": "adquisicion el 2020-06-09 hasta nuevo ......."
+        }
+      }
+    ]
+  },
+  {
+    "presupuesto": "900000",
+    "unidad": "dfaf",
+    "tipo": "metal",
+    "cantidad": "23424",
+    "valor-unitario": "464",
+    "fecha": "2024-04-18",
+    "proveedor": "pfizer",
+    "documentacion": "se la compr......",
+    "id": 753014,
+    "historial": [
+      {
+        "fecha": "2024-05-28T00:25:19.625Z",
+        "cambios": {
+          "presupuesto": "900000",
+          "unidad": "dfaf",
+          "tipo": "metalesssss",
+          "cantidad": "23424",
+          "valor-unitario": "464",
+          "fecha": "2024-04-18",
+          "proveedor": "pfizer",
+          "documentacion": "se la compr......"
+        }
+      }
+    ]
+  }
+]

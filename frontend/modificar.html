@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modificar Adquisición</title>
+    <link rel="stylesheet" href="css/modificarstyle.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Modificar Adquisición</h1>
+    </header>
+    <main>
+      <section>
+        <form id="form-modificar">
+          <div class="input-group">
+            <label for="presupuesto">Presupuesto:</label>
+            <input type="text" id="presupuesto" name="presupuesto" required />
+          </div>
+          <div class="input-group">
+            <label for="unidad">Unidad:</label>
+            <input type="text" id="unidad" name="unidad" required />
+          </div>
+          <div class="input-group">
+            <label for="tipo">Tipo de Bien o Servicio:</label>
+            <input type="text" id="tipo" name="tipo" required />
+          </div>
+          <div class="input-group">
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" required />
+          </div>
+          <div class="input-group">
+            <label for="valor-unitario">Valor Unitario:</label>
+            <input
+              type="number"
+              id="valor-unitario"
+              name="valor-unitario"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="fecha">Fecha de Adquisición:</label>
+            <input type="date" id="fecha" name="fecha" required />
+          </div>
+          <div class="input-group">
+            <label for="proveedor">Proveedor:</label>
+            <input type="text" id="proveedor" name="proveedor" required />
+          </div>
+          <div class="input-group">
+            <label for="documentacion">Documentación:</label>
+            <input
+              type="text"
+              id="documentacion"
+              name="documentacion"
+              required
+            />
+          </div>
+          <button type="submit">Guardar Cambios</button>
+        </form>
+      </section>
+    </main>
+    <footer>&copy; 2024 proyecto adress</footer>
+    <script src="js/modificar.js"></script>
+  </body>
+</html>

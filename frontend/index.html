@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión de Adquisiciones</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://orfeo.adres.gov.co/img/logo_ADRES.png"
+        alt="Logo ADRES"
+      />
+      <h1>Gestión de Adquisiciones</h1>
+    </header>
+
+    <main>
+      <section id="formulario">
+        <h2>Registro de Adquisiciones</h2>
+        <form id="form-adquisicion">
+          <div class="input-group">
+            <label for="presupuesto">Presupuesto:</label>
+            <input type="text" id="presupuesto" name="presupuesto" required />
+          </div>
+          <div class="input-group">
+            <label for="unidad">Unidad:</label>
+            <input type="text" id="unidad" name="unidad" required />
+          </div>
+          <div class="input-group">
+            <label for="tipo">Tipo de Bien o Servicio:</label>
+            <input type="text" id="tipo" name="tipo" required />
+          </div>
+          <div class="input-group">
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" required />
+          </div>
+          <div class="input-group">
+            <label for="valor-unitario">Valor Unitario:</label>
+            <input
+              type="number"
+              id="valor-unitario"
+              name="valor-unitario"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="fecha">Fecha de Adquisición:</label>
+            <input type="date" id="fecha" name="fecha" required />
+          </div>
+          <div class="input-group">
+            <label for="proveedor">Proveedor:</label>
+            <input type="text" id="proveedor" name="proveedor" required />
+          </div>
+          <div class="input-group">
+            <label for="documentacion">Documentación:</label>
+            <input
+              type="text"
+              id="documentacion"
+              name="documentacion"
+              required
+            />
+          </div>
+          <button type="submit">Registrar Adquisición</button>
+        </form>
+      </section>
+
+      <section id="lista-adquisiciones">
+        <h2>Lista de Adquisiciones</h2>
+        <input type="text" id="searchInput" placeholder="Buscar..." />
+        <table>
+          <thead>
+            <tr>
+              <th>Presupuesto</th>
+              <th>Unidad</th>
+              <th>Tipo de Bien o Servicio</th>
+              <th>Cantidad</th>
+              <th>Valor Unitario</th>
+              <th>Valor Total</th>
+              <th>Fecha de Adquisición</th>
+              <th>Proveedor</th>
+              <th>Documentación</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <!-- Aquí se insertarán las filas de datos dinámicamente -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 Gestión de Adquisiciones</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

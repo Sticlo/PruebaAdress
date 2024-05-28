@@ -1,0 +1,208 @@
+:root {
+    --primary-color: #3366CC;
+    --secondary-color: #009C9A;
+    --hover-color: #2670d8;
+    --footer-color: #164f9d;
+    --background-color: #f2f2f2;
+    --text-color: #fff;
+    --border-color: #ccc;
+    --input-focus-color: var(--primary-color);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+header img {
+    max-width: 200px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+
+header h1 {
+    margin-top: 0;
+    margin-left: 220px;
+    margin-right: 220px;
+}
+
+footer {
+    background-color: var(--footer-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="submit"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="submit"]:hover,
+button:hover {
+    border-color: var(--input-focus-color);
+}
+
+input[type="submit"],
+button {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 8px 12px;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: var(--hover-color);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th,
+table td {
+    padding: 8px;
+    border: 1px solid var(--border-color);
+}
+
+table th {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: bold;
+    text-align: left;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: var(--background-color);
+}
+
+table tbody tr:hover {
+    background-color: #eaeaea;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+#searchInput:focus {
+    border-color: var(--input-focus-color);
+}
+
+@media (min-width: 768px) {
+    header h1 {
+        margin-left: 220px;
+    }
+}
+
+#form-adquisicion {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#form-adquisicion .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#form-adquisicion .input-group input {
+    width: calc(100% - 22px);
+    /* Adjust to account for padding and border */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+#form-adquisicion button[type="submit"] {
+    font-size: 14px;
+    padding: 10px 20px;
+    display: block;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#form-adquisicion button[type="submit"]:hover {
+    background-color: var(--hover-color);
+}
+
+.actions button {
+    font-size: 12px;
+    padding: 4px 8px;
+    margin: 2px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    background-color: var(--hover-color);
+}
